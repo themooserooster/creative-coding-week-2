@@ -49,10 +49,8 @@ var makeStar = function(x1,y1,n) {
     if (i >= points.length -2)  {
         index = i;
       index2 = i-n; 
-      console.log('hi2');
     }
     drawLine(points[index].x,points[index].y,points[index2+2].x,points[index2+2].y)
-    console.log(i);
   }
   
   
