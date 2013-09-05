@@ -50,12 +50,16 @@ var makeStar = function(x1,y1,n) {
         index = i;
       index2 = i-n; 
     }
+    try{
     drawLine(points[index].x,points[index].y,points[index2+2].x,points[index2+2].y)
+    }
+    catch(err){}
   }
   
   
 }
 
-
-makeStar(326,281,7);
+// make more stars :)
+makeStar(337,187,6);
+makeStar(195,530,7);
 ```
