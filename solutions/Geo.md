@@ -25,7 +25,7 @@ var drawPoint = function(x,y) {
 }
 
 var makeStar = function(x1,y1,n) {
-  s = 167
+  s = 136
   sinner = s/2
   centerX = x1;
   centerY = y1;
@@ -43,17 +43,16 @@ var makeStar = function(x1,y1,n) {
     degree = degree + degreeNext;
     points.push({x:xn,y:yn})
   }
-  for (i = 0; i < points.length*2; i++) {
+  for (i = 0; i < points.length; i++) {
     var index = i;
     var index2 = i;
     if (i >= points.length -2)  {
         index = i;
       index2 = i-n; 
     }
-    try{
+
     drawLine(points[index].x,points[index].y,points[index2+2].x,points[index2+2].y)
-    }
-    catch(err){}
+
   }
   
   
@@ -62,4 +61,5 @@ var makeStar = function(x1,y1,n) {
 // make more stars :)
 makeStar(337,187,6);
 makeStar(195,530,7);
+makeStar(510,530,5);
 ```
